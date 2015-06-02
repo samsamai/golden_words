@@ -45,6 +45,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'pg', group: :production
+gem 'rails_12factor'
 
 gem 'bootstrap-sass'
 gem 'slim-rails'
@@ -64,3 +66,8 @@ group :development, :test do
   gem 'rubocop'
 end
 
+
+group :test do
+  gem 'minitest-rails-capybara'
+  gem 'minitest-reporters'
+end
