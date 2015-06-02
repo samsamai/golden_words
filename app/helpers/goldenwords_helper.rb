@@ -1,0 +1,2 @@
+module GoldenwordsHelper
+end
