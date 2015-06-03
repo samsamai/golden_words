@@ -20,15 +20,17 @@ class GoldenwordsController < ApplicationController
   def create
     @goldenword = Goldenword.new( goldenword_params )
 
-    respond_to do |format|
-      if @goldenword.save
-        format.html { redirect_to @goldenword, notice: 'Comment was successfully created.' }
-        format.json { render :show, status: :created, location: @goldenword }
-      else
-        format.html { render :new }
-        format.json { render json: @goldenword.errors, status: :unprocessable_entity }
-      end
+    if @goldenword.save
+      render json: @goldenword
+    else
+      render json: @goldenword.errors, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @goldenword = Goldenword.find(params[:id])
+    @goldenword.destroy
+    head :no_content
   end
 
   def show

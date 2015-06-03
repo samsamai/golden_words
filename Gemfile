@@ -62,8 +62,8 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_apps_pages'
   gem 'rails_layout'
+  gem 'guard-livereload', '~> 2.4', require: false
 end
-
 
 group :test do
   gem 'minitest-rails-capybara'
