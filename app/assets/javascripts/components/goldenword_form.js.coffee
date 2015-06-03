@@ -32,7 +32,7 @@
           React.DOM.input
             type: 'text'
             className: 'form-control'
-            placeholder: 'Text'
+            placeholder: 'New word'
             name: 'text'
             value: @state.text
             onChange: @handleChange
