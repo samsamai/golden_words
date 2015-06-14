@@ -36,6 +36,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    annotate (2.6.10)
+      activerecord (>= 3.2, <= 4.3)
+      rake (~> 10.4)
     ansi (1.5.0)
     arel (6.0.0)
     ast (2.0.0)
@@ -94,10 +97,14 @@ GEM
       pry (>= 0.9.12)
       shellany (~> 0.0)
       thor (>= 0.18.1)
+    guard-compat (1.2.1)
     guard-livereload (2.4.0)
       em-websocket (~> 0.5)
       guard (~> 2.8)
       multi_json (~> 1.8)
+    guard-minitest (2.4.4)
+      guard-compat (~> 1.2)
+      minitest (>= 3.0)
     haml (4.0.6)
       tilt
     haml2slim (0.4.7)
@@ -282,15 +289,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   better_errors
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
+  guard
   guard-livereload (~> 2.4)
+  guard-minitest
   haml2slim
   html2haml
   jbuilder (~> 2.0)
   jquery-rails
+  minitest-rails
   minitest-rails-capybara
   minitest-reporters
   pg

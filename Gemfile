@@ -54,6 +54,7 @@ gem 'pg', group: :production
 
 gem 'bootstrap-sass'
 gem 'slim-rails'
+gem 'minitest-rails'
 
 group :development do
   gem 'better_errors'
@@ -62,7 +63,10 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_apps_pages'
   gem 'rails_layout'
+  gem 'guard' 
+  gem 'guard-minitest'
   gem 'guard-livereload', '~> 2.4', require: false
+  gem 'annotate'
 end
 
 group :test do
