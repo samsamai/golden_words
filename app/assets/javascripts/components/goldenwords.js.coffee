@@ -27,6 +27,7 @@
           React.DOM.thead null,
             React.DOM.tr null,
               React.DOM.th null, 'Text'
+              React.DOM.th null, 'Sheet Colour'
               React.DOM.th null, 'Correct'
               React.DOM.th null, 'Wrong'
               React.DOM.th null, 'Actions'

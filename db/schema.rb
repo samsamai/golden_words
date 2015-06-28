@@ -15,11 +15,11 @@ ActiveRecord::Schema.define(version: 20150614100301) do
 
   create_table "goldenwords", force: :cascade do |t|
     t.string   "text"
-    t.integer  "correct",                 default: 0
-    t.integer  "wrong",                   default: 0
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-    t.string   "bg_colour_hex", limit: 6
+    t.integer  "correct",    default: 0
+    t.integer  "wrong",      default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "bg_colour"
   end
 
 end

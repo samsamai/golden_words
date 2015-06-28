@@ -4,6 +4,7 @@
       current_goldenword: @props.data[0]
     getDefaultProps: ->
       goldenwords: []
+      colour_table: { "Red": "#FF0000", "Golden": "#FFE800" }
 
     getRandomWord: (currentWord) ->
       _this = @
@@ -45,6 +46,8 @@
         className: 'container'
         React.DOM.div
           React.DOM.h1
+            id: 'title'
+            style: { backgroundColor: @props.colour_table[@state.current_goldenword.bg_colour] }
             className: 'jumbotron text-center'
             'Goldenwords'
           React.DOM.div
@@ -53,6 +56,7 @@
               className: 'goldenword'
               @state.current_goldenword.text
           React.DOM.div
+            id: 'test-buttons'
             className: 'col-md-8 col-md-offset-2'
             React.DOM.a
               className: 'button btn btn-primary btn-lg col-md-4 pull-left'

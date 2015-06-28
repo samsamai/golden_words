@@ -46,7 +46,7 @@ class GoldenwordsController < ApplicationController
     end
 
     def goldenword_params
-      params.require( :goldenword ).permit( :text, :correct, :wrong )
+      params.require( :goldenword ).permit( :text, :bg_colour, :correct, :wrong )
     end
   
 end

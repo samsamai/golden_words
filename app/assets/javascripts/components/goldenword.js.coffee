@@ -10,6 +10,7 @@
   render: ->
     React.DOM.tr null,
       React.DOM.td null, @props.goldenword.text
+      React.DOM.td null, @props.goldenword.bg_colour
       React.DOM.td null, @props.goldenword.correct
       React.DOM.td null, @props.goldenword.wrong
       React.DOM.td null,
