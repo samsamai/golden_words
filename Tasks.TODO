@@ -5,8 +5,10 @@ Todo:
   ✔ Add remove button for words @done (15-06-03 21:57)
   ☐ React validation erros show?
   ✔ Show sheet colour @done (15-06-28 21:28)
-  ☐ Edit colour of existing words
-      ☐ use bootstrap editable https://github.com/bootstrap-ruby/bootstrap-editable-rails
-      ☐  editing almost working posting the query but has undefined at the start of it.
+  ✔ Edit colour of existing words @done (15-06-30 21:58)
+      ✔ use bootstrap editable https://github.com/bootstrap-ruby/bootstrap-editable-rails @done (15-06-30 21:58)
+      ✔  editing almost working posting the query but has undefined at the start of it. @done (15-06-30 21:58)
   ☐ Add raku's drawings in the BG
   ✔ Live reload @done (15-06-29 20:30)
+  ☐ Add authentication for backend
+  ☐ include x-edit more nicely
