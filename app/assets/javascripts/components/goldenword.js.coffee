@@ -44,10 +44,6 @@
       React.DOM.td null, @props.goldenword.wrong
       React.DOM.td null,
         React.DOM.a
-          className: 'btn btn-danger'
+          className: 'action-btn btn btn-danger'
           onClick: @handleDelete
           'Delete'
-        React.DOM.a
-          className: 'btn btn-danger'
-          href: "/goldenwords/#{ @props.goldenword.id }/edit"
-          'Edit'
