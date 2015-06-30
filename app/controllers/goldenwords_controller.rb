@@ -36,6 +36,11 @@ class GoldenwordsController < ApplicationController
   def show
   end
 
+  def edit
+    p "@" * 100
+    p params
+  end
+
   def test
     @goldenwords = Goldenword.all
   end

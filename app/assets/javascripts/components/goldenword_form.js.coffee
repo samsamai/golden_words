@@ -21,7 +21,6 @@
           @props.handleNewWord data
           @setState @getInitialState()
 
-
     valid: ->
       @state.text
 

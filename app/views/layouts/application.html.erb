@@ -4,11 +4,19 @@
   <title>GoldenWordsReact</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+
+<div>
+  <span>Username:</span>
+  <a href="#" id="username" data-type="select" data-pk="1" data-value="1" data-title="Select group" class="editable editable-click" style="display: inline;">Admin</a>
+</div>
 
 </body>
 </html>
