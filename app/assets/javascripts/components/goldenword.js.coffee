@@ -27,7 +27,7 @@
               bg_colour: params.value
           return params
         ajaxOptions: {
-                type: 'put',
+                type: 'patch',
             }      
     });
 

@@ -48,9 +48,9 @@ group :development, :test do
   gem 'rubocop'
 end
 
-gem 'sqlite3', group: :development
+# gem 'sqlite3', group: :development
 gem 'rails_12factor'
-gem 'pg', group: :production
+gem 'pg'
 
 gem 'bootstrap-sass'
 gem 'slim-rails'

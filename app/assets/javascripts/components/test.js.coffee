@@ -2,6 +2,7 @@
     getInitialState: ->
       goldenwords: @props.data
       current_goldenword: @props.data[0]
+      
     getDefaultProps: ->
       goldenwords: []
       colour_table: { "Red": "#FF0000", "Golden": "#FFE800" }
@@ -42,25 +43,6 @@
       _this.updateDB()
 
     render: ->
-      $('#username').editable({
-          type: 'select',
-          title: 'Select status',
-          placement: 'right',
-          value: 2,
-          source: [
-              {value: 1, text: 'status 1'},
-              {value: 2, text: 'status 2'},
-              {value: 3, text: 'status 3'}
-          ],
-          mode: 'inline',
-          showbuttons: false
-          # /*
-          # //uncomment these lines to send data on server
-          # ,pk: 1
-          # ,url: '/post'
-          # */
-      });
-
       React.DOM.div
         className: 'container'
         React.DOM.div
@@ -85,30 +67,3 @@
               className: 'button btn btn-primary btn-lg col-md-4 pull-right'
               onClick: @handleWrong
               'Wrong'
-
-
-              # $(document).ready(function() {
-              #     //toggle `popup` / `inline` mode
-              #     $.fn.editable.defaults.mode = 'popup';     
-                  
-              #     //make username editable
-              #     $('#username').editable();
-                  
-              #     //make status editable
-              #     $('#status').editable({
-              #         type: 'select',
-              #         title: 'Select status',
-              #         placement: 'right',
-              #         value: 2,
-              #         source: [
-              #             {value: 1, text: 'status 1'},
-              #             {value: 2, text: 'status 2'},
-              #             {value: 3, text: 'status 3'}
-              #         ]
-              #         /*
-              #         //uncomment these lines to send data on server
-              #         ,pk: 1
-              #         ,url: '/post'
-              #         */
-              #     });
-              # });
