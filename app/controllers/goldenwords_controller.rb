@@ -37,8 +37,6 @@ class GoldenwordsController < ApplicationController
   end
 
   def edit
-    p "@" * 100
-    p params
   end
 
   def test
