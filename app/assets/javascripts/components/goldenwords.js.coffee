@@ -23,7 +23,7 @@
           'Goldenwords Admin'
 
         React.DOM.table
-          className: 'table table-bordered table-striped table-hover'
+          className: 'table table-bordered table-striped'
           React.DOM.thead null,
             React.DOM.tr null,
               React.DOM.th null, 'Text'
