@@ -52,6 +52,10 @@
               key: 'red' 
               value: 'Red'
               'Red'
+            React.DOM.option
+              key: 'blue' 
+              value: 'Blue'
+              'Blue'
 
         React.DOM.div
           className: 'form-group'

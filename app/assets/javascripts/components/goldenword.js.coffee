@@ -15,7 +15,8 @@
         value: @props.goldenword.bg_colour,
         source: [
             {value: 'Golden', text: 'Golden'},
-            {value: 'Red', text: 'Red'}
+            {value: 'Red', text: 'Red'},
+            {value: 'Blue', text: 'Blue'}
         ],
         mode: 'inline',
         showbuttons: false,

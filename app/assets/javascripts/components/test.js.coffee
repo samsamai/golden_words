@@ -5,7 +5,7 @@
       
     getDefaultProps: ->
       goldenwords: []
-      colour_table: { "Red": "#FF0000", "Golden": "#FFE800" }
+      colour_table: { "Red": "#FF0000", "Golden": "#FFE800", "Blue": "#00AAFF" }
 
     getRandomWord: (currentWord) ->
       _this = @
