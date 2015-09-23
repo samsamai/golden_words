@@ -1,7 +1,7 @@
 @GoldenwordForm = React.createClass
     getInitialState: ->
       text: '',
-      bg_colour: '',
+      bg_colour: 'Golden',
     
     handleChange: (e) ->
       name = e.target.name
@@ -19,7 +19,8 @@
             bg_colour: @state.bg_colour
         success: (data) =>
           @props.handleNewWord data
-          @setState @getInitialState()
+          @setState name: ''
+
 
     valid: ->
       @state.text
