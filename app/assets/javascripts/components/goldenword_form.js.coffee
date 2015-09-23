@@ -1,7 +1,7 @@
 @GoldenwordForm = React.createClass
     getInitialState: ->
       text: '',
-      bg_colour: 'Red',
+      bg_colour: '',
     
     handleChange: (e) ->
       name = e.target.name
@@ -41,11 +41,11 @@
           className: 'form-group'
           React.DOM.select
             className: 'form-control selectpicker'
-            value: 'Red'
+            # value: 'Red'
             name: 'bg_colour'
             onChange: @handleChange
             React.DOM.option
-              key: 'gold' 
+              key: 'golden' 
               value: 'Golden'
               'Golden'
             React.DOM.option
@@ -56,6 +56,10 @@
               key: 'blue' 
               value: 'Blue'
               'Blue'
+            React.DOM.option
+              key: 'green' 
+              value: 'Green'
+              'Green'
 
         React.DOM.div
           className: 'form-group'

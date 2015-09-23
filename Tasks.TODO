@@ -13,3 +13,5 @@ Todo:
   ☐ Add authentication for backend
   ✔ include x-edit more nicely @done (15-07-02 21:53)
   ✔ Deploy to Heroku @done (15-07-01 21:30)
+
+  ☐ Sheet colour selection not wotrking properly for inline

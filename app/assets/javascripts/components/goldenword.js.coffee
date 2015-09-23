@@ -16,7 +16,8 @@
         source: [
             {value: 'Golden', text: 'Golden'},
             {value: 'Red', text: 'Red'},
-            {value: 'Blue', text: 'Blue'}
+            {value: 'Blue', text: 'Blue'},
+            {value: 'Green', text: 'Green'}
         ],
         mode: 'inline',
         showbuttons: false,
